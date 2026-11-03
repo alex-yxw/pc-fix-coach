@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/926778b6-cabb-4ce5-bac6-b6cd83ec8c9e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f2e3403f-763b-46b3-931a-0a8496bf3a12
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f2e3403f-763b-46b3-931a-0a8496bf3a12
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 176441be-9419-4b7c-b3d4-6c8cecdefb5c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/176441be-9419-4b7c-b3d4-6c8cecdefb5c>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 1aeff978-b463-43e6-8d42-134055bb3602
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bodyColor: false
+    cardSizeCm: false
+    completeColor: false
+    headerColor: false
+    viewDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - cardSizeCm: !<Vec2> {x: 25.000000, y: 10.000000}
+      viewDistanceCm: !<float> 75.000000
+      headerColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      bodyColor: !<Vec4> {x: 0.920000, y: 0.960000, z: 1.000000, w: 0.920000}
+      completeColor: !<Vec4> {x: 0.600000, y: 1.000000, z: 0.700000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PCFixCoachInstructionCardUI – step instruction card</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec2 cardSizeCm = {25,10} {"hint":"Card size in cm (width, height)."}'
+    - '// @input float viewDistanceCm = 90 {"hint":"Typical viewing distance (cm); text is scaled from the 110 cm Specs type scale.", "widget":"slider", "min":40, "max":150, "step":5}'
+    - "// @input vec4 headerColor = \"{1, 1, 1, 1}\" {\"hint\":\"Header ('Step N of 5') text color.\", \"widget\":\"color\"}"
+    - '// @input vec4 bodyColor = "{0.92, 0.96, 1, 0.92}" {"hint":"Instruction text color (keep it light: black is invisible on Specs).", "widget":"color"}'
+    - "// @input vec4 completeColor = \"{0.6, 1.0, 0.7, 1}\" {\"hint\":\"Header color for the final 'GPU Installed' confirmation.\", \"widget\":\"color\"}"
+    - '// @ui {"widget":"group_end"}'

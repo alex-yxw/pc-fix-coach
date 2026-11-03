@@ -1,0 +1,100 @@
+- !<AssetImportMetadata/134ac2c2-d32b-463c-a2a0-0fb3c13ad92b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 309f559a-8aa2-4b9f-be83-8beb2f102282
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 309f559a-8aa2-4b9f-be83-8beb2f102282
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 636a7a64-4aef-41c5-b769-46fc1ba88755
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/636a7a64-4aef-41c5-b769-46fc1ba88755>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7015bc28-00dd-4968-b317-59d873419737
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    activeColor: false
+    arrowHeightCm: false
+    completedColor: false
+    completionGlow: false
+    confirmColor: false
+    gpu: false
+    gpuInstalledPose: false
+    guideArrow: false
+    outlineThicknessCm: false
+    pcieSlot: false
+    powerConnector: false
+    powerPlug: false
+    screw: false
+    screwHole: false
+    slotCover: false
+    warningColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - slotCover: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      gpu: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      screw: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      powerPlug: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      pcieSlot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gpuInstalledPose: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      screwHole: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      powerConnector: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      guideArrow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      completionGlow: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      activeColor: !<Vec4> {x: 0.350000, y: 0.950000, z: 1.000000, w: 1.000000}
+      completedColor: !<Vec4> {x: 0.550000, y: 0.750000, z: 1.000000, w: 0.350000}
+      confirmColor: !<Vec4> {x: 0.750000, y: 1.000000, z: 0.800000, w: 1.000000}
+      warningColor: !<Vec4> {x: 1.000000, y: 0.720000, z: 0.250000, w: 1.000000}
+      outlineThicknessCm: 0.350000
+      arrowHeightCm: !<float> 4.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PCFixCoachGuideController – highlights, arrow, glow</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 slotCover {"hint":"Step 1 part: PCIe slot cover."}'
+    - '// @input AssignableType_2 gpu {"hint":"Step 3 part: GPU."}'
+    - '// @input AssignableType_3 screw {"hint":"Step 4 part: screw."}'
+    - '// @input AssignableType_4 powerPlug {"hint":"Step 5 part: power plug."}'
+    - '// @input SceneObject pcieSlot {"hint":"Step 2 target: PCIe x16 slot."}'
+    - '// @input SceneObject gpuInstalledPose {"hint":"Step 3 target: where the GPU snaps (ghost outline)."}'
+    - '// @input SceneObject screwHole {"hint":"Step 4 target: screw hole."}'
+    - '// @input SceneObject powerConnector {"hint":"Step 5 target: GPU power connector."}'
+    - '// @input SceneObject guideArrow {"hint":"Arrow that points down at the current target (visual points -Y)."}'
+    - '// @input Component.RenderMeshVisual completionGlow {"hint":"Translucent shell around the PC used for the completion glow pulse."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec4 activeColor = "{0.35, 0.95, 1.0, 1.0}" {"hint":"Current step highlight color (brightest).", "widget":"color"}'
+    - '// @input vec4 completedColor = "{0.55, 0.75, 1.0, 0.35}" {"hint":"Completed parts: dim, light-colored outline (alpha = brightness).", "widget":"color"}'
+    - '// @input vec4 confirmColor = "{0.75, 1.0, 0.8, 1.0}" {"hint":"Short confirmation flash when a step completes.", "widget":"color"}'
+    - '// @input vec4 warningColor = "{1.0, 0.72, 0.25, 1.0}" {"hint":"Soft amber warning flash on a wrong release.", "widget":"color"}'
+    - '// @input float outlineThicknessCm = 0.35 {"hint":"Outline bar thickness in cm.", "widget":"slider", "min":0.1, "max":1, "step":0.05}'
+    - '// @input float arrowHeightCm = 4 {"hint":"Height (cm) of the guide arrow tip above the current target.", "widget":"slider", "min":3, "max":20, "step":0.5}'
+    - '// @ui {"widget":"group_end"}'

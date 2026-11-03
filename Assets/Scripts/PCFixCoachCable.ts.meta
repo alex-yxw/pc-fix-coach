@@ -1,0 +1,61 @@
+- !<AssetImportMetadata/685241e1-defc-4ffb-811b-9acb3e9763d9>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> caf78966-4582-46a2-a243-d2b2c0058922
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> caf78966-4582-46a2-a243-d2b2c0058922
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e08c3224-bb23-4446-a062-4962d3e72915
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e08c3224-bb23-4446-a062-4962d3e72915>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 9c98ab1d-5b09-45ab-b3b5-3dd4ab9f3d2f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    endAnchor: false
+    startAnchor: false
+    thicknessCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - startAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      endAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      thicknessCm: 0.800000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PCFixCoachCable – straight stand-in cable</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject startAnchor {"hint":"Cable start point (PSU outlet)."}'
+    - '// @input SceneObject endAnchor {"hint":"Cable end point (moves with the power plug)."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float thicknessCm = 0.8 {"hint":"Cable thickness in cm.", "widget":"slider", "min":0.2, "max":2, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

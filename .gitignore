@@ -1,0 +1,30 @@
+# BEGIN Lens Studio managed Agents-Docs block
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# END Lens Studio managed Agents-Docs block
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json
+
+# Lens Studio generated / local state
+Cache/
+Workspaces/
+PluginsUserPreferences/
+Support/
+ls-live-instance.json
+.virtual-scene.json
+.icon_tmp/
+.clad/
+
+# Private keys and secrets
+*.pem
+.env
+.env.*
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
